@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bpw0nvn0pnqpr"]
+
+[ext_resource type="Texture2D" uid="uid://cxur2dd3gujxu" path="res://assets/import_examples/chest_gold/chest_texture.png" id="1_kp0ej"]
+
+[resource]
+albedo_color = Color(0.881694, 0.882602, 0.911264, 1)
+albedo_texture = ExtResource("1_kp0ej")

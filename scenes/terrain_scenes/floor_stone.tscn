@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://biraopch0glao"]
+
+[ext_resource type="PackedScene" uid="uid://codikjo1uxd6q" path="res://assets/dungeon_assets/building/floor_stone.glb" id="1_4r6m7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_deqag"]
+size = Vector3(4, 0.2, 4)
+
+[node name="floor_stone" type="StaticBody3D"]
+
+[node name="floor_stone" parent="." instance=ExtResource("1_4r6m7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.98023e-08, 0)
+shape = SubResource("BoxShape3D_deqag")
