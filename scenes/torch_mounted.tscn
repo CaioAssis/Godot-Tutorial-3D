@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b14klox5dx5y4"]
+
+[ext_resource type="PackedScene" uid="uid://carw62ggh53hb" path="res://assets/dungeon_assets/props/torch_mounted.glb" id="1_1yhlk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dhyxj"]
+size = Vector3(0.5, 1, 0.4)
+
+[node name="torch_mounted" type="StaticBody3D"]
+
+[node name="torch_mounted2" parent="." instance=ExtResource("1_1yhlk")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0.3)
+shape = SubResource("BoxShape3D_dhyxj")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.638344, 0.322128)
+light_color = Color(0.95, 0.5054, 0.209, 1)
+light_energy = 2.0
